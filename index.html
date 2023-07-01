@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        </head>
+
+        <body>
+
+            <a-scene background="color: #000000">
+
+            <a-camera position = "0 0 10"></a-camera>
+
+            <a-entity>
+                <a-box position = "0 1 -10" color = "grey"
+                height = "4" width = "2"></a-box>
+            </a-entity>
+            
+            <a-entity >
+                <a-sphere position = "0 4 -10" radius="1" color = "grey"></a-sphere>
+            </a-entity>
+
+            <a-entity position="0 0 0" animation="property: position;from:-0.3 4 -9; to: -0.3 100 -9;dir:alternate; loop: true; dur: 20000">
+                <a-sphere position="-0.3 4 -9" radius="0.2" color="red">
+                </a-sphere>
+            </a-entity>
+            <a-entity>
+                <a-sphere position="0.3 4 -9" radius="0.2" color="red">
+                </a-sphere>
+            </a-entity>
+
+
+            <a-entity>
+                <a-cylinder position="0.5 -1 -10" color="grey"
+                height="2" width="0.1" radius="0.5"></a-cylinder>
+            </a-entity>
+            <a-entity>
+                <a-cylinder position="-0.5 -1 -10" color="grey"
+                height="2" width="0.1" radius="0.5"></a-cylinder>
+            </a-entity>
+
+            <a-entity>
+                <a-cylinder position="1.5 1 -10" rotation="0 0 10" color="grey"
+                height="3.8" radius="0.4"></a-cylinder>
+            </a-entity>
+
+            <a-entity>
+                <a-cylinder position="-1.5 1 -10" rotation="0 0 -10" color="grey"
+                height="3.8" radius="0.4"></a-cylinder>
+            </a-entity>
+
+
+
+
+        </body>
+    </html>
